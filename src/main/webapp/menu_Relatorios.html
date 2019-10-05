@@ -25,28 +25,27 @@ and open the template in the editor.
                 <img src="./assets/img/logo.svg" alt="Logo Livraria Tades" />
                 <h1>Tades</h1>
             </div>
-            <div class="menu__usuario"></div>
         </header>
-    </body>
-    <div class="containerRelatorio">
-        <div class="linha">
-            <div class="coluna">
-                <h2>Relatorios</h2>
-            </div>
-        </div>
-        <hr>
-        <form id="menuRelatorio" name="menu_Relatorio" class="form">
+        <div class="containerRelatorio">
             <div class="linha">
                 <div class="coluna">
-                    <input type="button" value="TOP 10 Mais vendidos" class="btn btn-TopMaisVendidos" />
-                </div>
-                <div class="coluna">
-                    <input type="button" value="Total Por Filial" class="btn btn-TotalFilial" />
-                </div>
-                <div class="coluna">
-                    <input type="button" value="Percentual Por Filial" class="btn btn-PercentualFilial" />
+                    <h2>Relatórios</h2>
                 </div>
             </div>
-        </form>
-    </div>
+            <hr>
+            <form id="menuRelatorio" name="menu_Relatorio" class="form">
+                <div class="linha">
+                    <div class="coluna">
+                        <a href ="top_MaisVendidos.html"><input type="button" value="TOP 10 Mais vendidos" class="btn btn-TopMaisVendidos" /></a>
+                    </div>
+                    <div class="coluna">
+                        <a href ="total_Filial.html"><input type="button" value="Total Por Filial" class="btn btn-TotalFilial" /></a>
+                    </div>
+                    <div class="coluna">
+                        <a href ="percentual_Filial"><input type="button" value="Percentual Por Filial" class="btn btn-PercentualFilial" /></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
