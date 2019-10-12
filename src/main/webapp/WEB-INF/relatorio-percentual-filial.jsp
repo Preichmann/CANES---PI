@@ -1,16 +1,18 @@
+<%-- 
+    Document   : relatorio-percentual-filial
+    Created on : 11/10/2019, 22:14:08
+    Author     : beatriz.silva19
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Top 10 Mais Vendidos</title>
+        <title>Percentual por Filial</title>
         <link
             rel="shortcut icon"
             href="./assets/img/logo.svg"
@@ -20,6 +22,7 @@ and open the template in the editor.
     </head>
     <body>
         <header class="header">
+            <hr>
             <div class="logo">
                 <h1>Livraria</h1>
                 <img src="./assets/img/logo.svg" alt="Logo Livraria Tades" />
@@ -29,11 +32,11 @@ and open the template in the editor.
         <div class="containerRelatorio">
             <div class="linha">
                 <div class="coluna">
-                    <h2>Top 10 Mais Vendidos</h2>
+                    <h2>Percentual por Filial</h2>
                 </div>
             </div>
             <hr>
-            <form id="topMaisVendidos" name="top_MaisVendidos" class="form">
+            <form id="percentualFilial" name="percentual_filial" class="form">
                 <div class="linha">
                     <div class="coluna">
                         <select class="campo" name="filial" id="filial">
@@ -54,51 +57,51 @@ and open the template in the editor.
                 <table id="tabela" class="tabela">
                     <thead>
                         <tr>
-                            <th>Posição</th>
-                            <th>Título</th>  
+                            <th>Filial</th>
+                            <th>Valor Total</th>  
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>TESTE</td>
+                            <td>São Paulo</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>TESTE</td>
+                            <td>Rio de Janeiro</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>TESTE</td>          
+                            <td>Curitiba</td>
+                            <td>100%</td>          
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>TESTE</td>
+                            <td>Natal</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td>TESTE</td>
+                            <td>Salvador</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>TESTE</td>
+                            <td>Recife</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>7</td>
-                            <td>TESTE</td>
+                            <td>Florianopolis</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>8</td>
-                            <td>TESTE</td>
+                            <td>Santos</td>
+                            <td>100%</td>
                         </tr>
                         <tr>
-                            <td>9</td>
-                            <td>TESTE</td>
+                            <td>Belo Horizonte</td>
+                            <td>100%</td>
                         </tr>
 
                         <tr>
-                            <td>10</td>
-                            <td>TESTE</td>
+                            <td>Sergipe</td>
+                            <td>100%</td>
                         </tr>
                     </tbody>
                 </table>
