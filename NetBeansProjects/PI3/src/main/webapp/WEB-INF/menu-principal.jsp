@@ -30,15 +30,21 @@
         <div class="container__menu__principal">
             <div class="dropdown">
                 <img src="${pageContext.request.contextPath}/img/venda.svg" alt="botão para tela de venda">
-                <a href="venda.html" class="dropbtn btn-venda">Venda</a>
+                <form class="dropbtn btn-venda" method="get" action="${pageContext.request.contextPath}/Vender" novalidate>
+                    <input type="submit" value="Vender">
+                </form>
             </div>
 
             <div class="dropdown">
                 <img src="${pageContext.request.contextPath}/img/produto.svg" alt="botão para produtos">
                 <button class="dropbtn">Produtos</button>
                 <div class="dropdown-content">
-                    <a href="#">Pesquisar</a>
-                    <a href="cadastro-produto.html">Cadastrar</a>
+                    <form method="get" action="${pageContext.request.contextPath}/ProdutoConsultar" novalidate>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                    <form method="get" action="${pageContext.request.contextPath}/formularioProduto" novalidate>
+                        <input type="submit" value="Cadastrar">
+                    </form>
                 </div>
             </div>
 
@@ -46,8 +52,12 @@
                 <img src="${pageContext.request.contextPath}/img/cliente.svg" alt="botão para clientes">
                 <button class="dropbtn">Clientes</button>
                 <div class="dropdown-content">
-                    <a href="#">Pesquisar</a>
-                    <a href="cadastro-cliente.html">Cadastrar</a>
+                    <form method="get" action="${pageContext.request.contextPath}/ConsultaCliente" novalidate>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                    <form method="get" action="${pageContext.request.contextPath}/cliente" novalidate>
+                        <input type="submit" value="Cadastrar">
+                    </form>
                 </div>
             </div>
 
@@ -55,8 +65,12 @@
                 <img src="${pageContext.request.contextPath}/img/funcionario.svg" alt="botão para funcionários">
                 <button class="dropbtn">Funcionários</button>
                 <div class="dropdown-content">
-                    <a href="#">Pesquisar</a>
-                    <a href="cadastro-funcionario.html">Cadastrar</a>
+                    <form method="get" action="${pageContext.request.contextPath}/FuncionarioConsultar" novalidate>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                    <form method="get" action="${pageContext.request.contextPath}/formularioFuncionario" novalidate>
+                        <input type="submit" value="Cadastrar">
+                    </form>
                 </div>
             </div>
 
@@ -64,9 +78,15 @@
                 <img src="${pageContext.request.contextPath}/img/relatorio.svg" alt="botão para o menu de relatórios">
                 <button class="dropbtn">Relatórios</button>
                 <div class="dropdown-content">
-                    <a href="#">Top 10 Produtos mais Vendidos</a>
-                    <a href="#">Total por Filial</a>
-                    <a href="#">Percentual por Filial</a>
+                    <form method="get" action="${pageContext.request.contextPath}/RelatorioTop" novalidate>
+                        <input type="submit" value="Top 10 Produtos mais Vendidos">
+                    </form>
+                    <form method="get" action="${pageContext.request.contextPath}/RelatorioFilial" novalidate>
+                        <input type="submit" value="Total por Filial">
+                    </form>
+                    <form method="get" action="${pageContext.request.contextPath}/RelatorioPercentual" novalidate>
+                        <input type="submit" value="Percentual por Filial">
+                    </form>
                 </div>
             </div>
         </div>

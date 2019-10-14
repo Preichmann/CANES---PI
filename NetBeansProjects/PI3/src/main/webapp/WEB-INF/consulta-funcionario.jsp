@@ -13,15 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consultar Funcionário</title>
-    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-svg" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.svg" type="image/x-svg" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
             <h1>Livraria</h1>
-            <img src="assets/img/logo.svg" alt="Logo Livraria Tades">
+            <img src="${pageContext.request.contextPath}/img/logo.svg" alt="Logo Livraria Tades">
             <h1>Tades</h1>
         </div>
         <div class="menu__usuario"></div>
